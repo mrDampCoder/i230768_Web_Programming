@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Gallery</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="top">
+    <h1 class="site-title">Art Gallery</h1>
+
+    <nav class="nav">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About Us</a>
+      <a class="nav-link" href="index.html#feedback">Feedback</a>
+
+      <label class="nav-label" for="category">Category:</label>
+      <select id="category" class="dropdown" name="category">
+        <option value="all">All</option>
+        <option value="abstract">Abstract</option>
+        <option value="nature">Nature</option>
+        <option value="portrait">Portrait</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2 class="heading">About Us</h2>
+
+      <p class="muted">
+        Art Gallery is a small space created to showcase different styles of artwork in a clean and simple way.
+        This website is made using semantic HTML5 and an external CSS file.
+      </p>
+
+      <h3 class="subheading">Our Mission (Unordered List)</h3>
+      <ul class="list">
+        <li>Present art in a clean layout</li>
+        <li>Encourage creativity</li>
+        <li>Make the page responsive on mobile and desktop</li>
+      </ul>
+
+      <h3 class="subheading">What We Offer (Ordered List)</h3>
+      <ol class="list">
+        <li>Curated categories of artwork</li>
+        <li>A simple browsing experience</li>
+        <li>A feedback form for visitors</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="muted">© 2026 Art Gallery</p>
+  </footer>
+</body>
+</html>

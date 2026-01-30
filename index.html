@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Gallery</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="top">
+    <h1 class="site-title"><i class="fa-solid fa-palette"></i> Art Gallery</h1>
+
+    <nav class="nav">
+      <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a class="nav-link" href="about.html">About Us</a>
+      <a class="nav-link" href="#feedback">Feedback</a>
+
+      <label class="nav-label" for="category">Category:</label>
+      <select id="category" class="dropdown" name="category">
+        <option value="all">All</option>
+        <option value="abstract">Abstract</option>
+        <option value="nature">Nature</option>
+        <option value="portrait">Portrait</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <section id="gallery" class="section">
+      <h2 class="heading">Gallery</h2>
+
+      <h3 class="subheading">Available Styles (Unordered List)</h3>
+      <ul class="list">
+        <li>Abstract</li>
+        <li>Nature</li>
+        <li>Portrait</li>
+      </ul>
+
+      <h3 class="subheading">How to Visit (Ordered List)</h3>
+      <ol class="list">
+        <li>Choose a category from the dropdown.</li>
+        <li>Explore the artworks below.</li>
+        <li>Leave feedback at the bottom.</li>
+      </ol>
+
+      <div class="cards">
+        <article class="card">
+          <h3 class="card-title">Artwork 1</h3>
+
+          <img class="art-img"
+               src="pics/pic1.avif"
+               alt="Artwork 1">
+
+          <p class="muted">Category: Abstract</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Artwork 2</h3>
+
+          <img class="art-img"
+               src="pics/pic5.jpg"
+               alt="Artwork 2">
+
+          <p class="muted">Category: Nature</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Artwork 3</h3>
+
+          <img class="art-img"
+               src="pics/John Wick Inspired Tattoo.jpg"
+               alt="Artwork 3">
+
+          <p class="muted">Category: Portrait</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="feedback" class="section">
+      <h2 class="heading">Feedback Form</h2>
+
+      <form class="form" action="#" method="post">
+        <label class="label" for="name">Name</label>
+        <input class="input" id="name" name="name" type="text" required />
+
+        <label class="label" for="email">Email</label>
+        <input class="input" id="email" name="email" type="email" required />
+
+        <label class="label" for="rating">Rating</label>
+        <select class="input" id="rating" name="rating" required>
+          <option value="">Select</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Poor</option>
+          <option value="1">1 - Bad</option>
+        </select>
+
+        <label class="label" for="message">Message</label>
+        <textarea class="input" id="message" name="message" rows="4" required></textarea>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="muted">© 2026 Art Gallery</p>
+  </footer>
+</body>
+</html>
