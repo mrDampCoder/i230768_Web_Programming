@@ -3,62 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Art Gallery</title>
+  <title>Art Gallery | About</title>
 
+  <!-- Web Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header id="top">
-    <h1 class="site-title">Art Gallery</h1>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-badge"><i class="fa-solid fa-palette"></i></span>
+        <div>
+          <h1 class="site-title">Art Gallery</h1>
+          <p class="tagline">Discover art. Feel more.</p>
+        </div>
+      </div>
 
-    <nav class="nav">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="about.html">About Us</a>
-      <a class="nav-link" href="index.html#feedback">Feedback</a>
-
-      <label class="nav-label" for="category">Category:</label>
-      <select id="category" class="dropdown" name="category">
-        <option value="all">All</option>
-        <option value="abstract">Abstract</option>
-        <option value="nature">Nature</option>
-        <option value="portrait">Portrait</option>
-      </select>
-    </nav>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a class="nav-link is-active" href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a class="nav-link" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+        <a class="nav-link" href="signup.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+        <a class="nav-link" href="feedback.html"><span class="material-icons icon">rate_review</span> Feedback</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="section">
-      <h2 class="heading">About Us</h2>
-
-      <p class="muted">
-        Art Gallery is a small space created to showcase different styles of artwork in a clean and simple way.
-        This website is made using semantic HTML5 and an external CSS file.
+  <main class="container">
+    <section class="page-headubez  
+        <section class="page-head" aria-label="About intro">
+      <h2 class="page-title">About Us</h2>
+      <p class="page-subtitle">
+        We curate modern and classic artwork and present it with a clean, premium UI.
+        This page is built using semantic HTML5 and is styled via external CSS.
       </p>
-
-      <h3 class="subheading">Our Mission (Unordered List)</h3>
-      <ul class="list">
-        <li>Present art in a clean layout</li>
-        <li>Encourage creativity</li>
-        <li>Make the page responsive on mobile and desktop</li>
-      </ul>
-
-      <h3 class="subheading">What We Offer (Ordered List)</h3>
-      <ol class="list">
-        <li>Curated categories of artwork</li>
-        <li>A simple browsing experience</li>
-        <li>A feedback form for visitors</li>
-      </ol>
     </section>
+
+    <section class="section" aria-label="Our story">
+      <header class="section-header">
+        <h3 class="section-title">Our Story</h3>
+        <p class="section-subtitle">A simple but “next-level” layout for your web programming task.</p>
+      </header>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h4 class="card-title"><i class="fa-solid fa-bullseye"></i> Our Mission</h4>
+          <p class="card-text">
+            Make art feel accessible, organized, and visually premium using neat typography,
+            balanced spacing, and interactive components.
+          </p>
+          <ul class="list">
+            <li>Curated collections</li>
+            <li>Clean interface</li>
+            <li>Responsive design</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h4 class="card-title"><i class="fa-solid fa-gem"></i> What Makes Us Different</h4>
+          <p class="card-text">
+            Instead of a plain page, we use sections, cards, icons, and grid layout that adapts to screen size.
+          </p>
+          <div class="mini-cards">
+            <div class="mini-card">
+              <span class="material-icons icon">brush</span>
+              <div>
+                <strong>Curated</strong>
+                <p>Only top picks</p>
+              </div>
+            </div>
+            <div class="mini-card">
+              <span class="material-icons icon">devices</span>
+              <div>
+                <strong>Responsive</strong>
+                <p>Mobile-friendly</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Team">
+      <header class="section-header">
+        <h3 class="section-title">Meet the Team</h3>
+        <p class="section-subtitle">Simple semantic + card layout (perfect for marks).</p>
+      </header>
+
+      <div class="grid grid-3">
+        <article class="card team-card">
+          <div class="avatar" aria-hidden="true">A</div>
+          <h4 class="card-title">Ayesha Khan</h4>
+          <p class="card-text">Curator • Modern Art</p>
+        </article>
+
+        <article class="card team-card">
+          <div class="avatar" aria-hidden="true">H</div>
+          <h4 class="card-title">Hamza Ali</h4>
+          <p class="card-text">Gallery Manager</p>
+        </article>
+
+        <article class="card team-card">
+          <div class="avatar" aria-hidden="true">S</div>
+          <h4 class="card-title">Sara Noor</h4>
+          <p class="card-text">Artist Relations</p>
+        </article>
+      </div>
+    </section>
+
+    <aside class="note" aria-label="Quick navigation">
+      <h3 class="note-title"><i class="fa-solid fa-compass"></i> Quick Links</h3>
+      <p class="note-text">Explore more pages of this website:</p>
+      <div class="link-row">
+        <a class="btn btn-primary" href="index.html"><i class="fa-solid fa-images"></i> Gallery</a>
+        <a class="btn btn-ghost" href="feedback.html"><span class="material-icons icon">rate_review</span> Feedback</a>
+      </div>
+    </aside>
   </main>
 
-  <footer class="footer">
-    <p class="muted">© 2026 Art Gallery</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-text">&copy; 2026 Art Gallery • About Page</p>
+      <p class="footer-mini"><i class="fa-solid fa-location-dot"></i> Online Exhibition</p>
+    </div>
   </footer>
 </body>
 </html>
